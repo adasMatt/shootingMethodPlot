@@ -32,29 +32,35 @@ class infiniteSquareWell: potentialClass {
 // should this be a subclass of potentialClass or not?
 class recursionClass: infiniteSquareWell {
     
-
     @ObservedObject var waveFuncArrays = waveFunctionArrayClass()
         
-    func functional(steps: Double, guessFirstE: Double, nodes: Int) -> [plotDataType] {
+    //func shootingMethod(xSteps: Double, guessEnergy: Double) -> [plotDataType] {
         
+    func shootingMethod(xSteps: Double, guessEnergy: Double) -> Double {
+
         var plotData: [plotDataType] =  []
 
         var psi: [Double] = []
         var psiPrime: [Double] = []
         var psiDoublePrime: [Double] = []
         
-        let n = Double(nodes)
+        let energy = guessEnergy
         
-        let energy = hbarSquaredOverElectronMass/2 * Double.pi * Double.pi * Double(n) * Double(n) / xMax
+        // for test function
+        //let n = Double(nodes)
+        //let exactEnergy = hbarSquaredOverElectronMass/2 * Double.pi * Double.pi * Double(n) * Double(n) / (xMax * xMax)
         
         var i = 0
         
         // start with a guess for the slope at zero, and 2nd derivative of psi equal to zero
-        psiPrime.append(guessFirstE)
+        psiPrime.append(5.0)
         psiDoublePrime.append(0.0)
         psi.append(0.0)
         
-        for deltaX in stride(from: xMin, through: xMax, by: steps) {
+        let deltaX = xSteps
+        
+        for xValue in stride(from: xMin, through: xMax, by: xSteps) {
+            
             
             // need to append deltaX to set of x points for Core Plot
 
@@ -62,17 +68,19 @@ class recursionClass: infiniteSquareWell {
             psiPrime.append(psiPrime[i] + psiDoublePrime[i]*deltaX)
             
             // psi depending on initial psiPrime[0] guess
-            psi.append(psi[i] + psiPrime[i]*deltaX)
             
+            //why do I have 2 zeros
+            psi.append(psi[i] + psiPrime[i]*deltaX)
+            print(psi[i])
             // recursiveness in psiDoublePrime dependent on psi
             psiDoublePrime.append(-(2/hbarSquaredOverElectronMass) * psi[i+1] * energy)
-            
-            let x = deltaX
+            /*
+            let x = xValue
             let y = psi[i]
             // from coreplot stuff
             let dataPoint: plotDataType = [.X: x, .Y: y] // create single point?
             plotData.append(contentsOf: [dataPoint]) // append single point to an array?
-            
+            */
             // what is calculated text?
             //plotDataModel!.calculatedText += "\(x)\t\(y)\n"
             
@@ -86,7 +94,7 @@ class recursionClass: infiniteSquareWell {
         waveFuncArrays.psiPrimeArray.append(psiPrime)
         
         //return plotData for now
-        return plotData
+        return psi[psi.count-1]
         
     }   // end of functional function
     

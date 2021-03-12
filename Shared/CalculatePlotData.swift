@@ -31,30 +31,30 @@ class CalculatePlotData: ObservableObject {
         
         
         var plotData :[plotDataType] =  []
-        
-        // maybe change to  for loop dependent on length of psiArray
-        /*
-        for i in 0 ..< 120 {
+        var eMin = 0.0
+        var eMax = 20.0
+        let energyStep = 0.0050
+         // what is calculated text?
+        //  plotDataModel!.calculatedText += "\(x)\t\(y)\n"
 
-            //create x values here
-
-            let x = -2.0 + Double(i) * 0.2
-
-            //create y values here from psi prime
-
-            let y = x
-
-            let dataPoint: plotDataType = [.X: x, .Y: y] // create single point?
+        for energy in stride(from: eMin, through: eMax, by: energyStep) {
+            
+            let functionalValue = recursion.shootingMethod(xSteps: 0.005, guessEnergy: energy)
+            
+            let dataPoint: plotDataType = [.X: energy, .Y: functionalValue] // create single point?
             plotData.append(contentsOf: [dataPoint]) // append single point to an array?
             
-         // what is calculated text?
-            plotDataModel!.calculatedText += "\(x)\t\(y)\n"
-        
-        }*/
-        
+            
+            
+            
+        }
         
         // what about for length waveFuncArrays.psiArray: plotData.append(deltaX, psi)
-        plotData = recursion.functional(steps: 1.0, guessFirstE: 5.0, nodes: 1)
+        // arguments here should be user input
+        
+        // first true energy example
+        //plotData = recursion.functional(steps: 0.005, guessFirstE: 0.3760301625557498, nodes: 1)
+        
         
         // plotData is an array of points
         plotDataModel!.appendData(dataPoint: plotData)
