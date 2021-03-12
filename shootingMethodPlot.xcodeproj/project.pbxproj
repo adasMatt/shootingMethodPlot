@@ -47,6 +47,14 @@
 		7F124B5025F2F8D400D12DC5 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 7F124B4F25F2F8D400D12DC5 /* CorePlot */; };
 		7F124B5225F2F8E600D12DC5 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 7F124B5125F2F8E600D12DC5 /* CorePlot */; };
 		7F124B5425F2F8EA00D12DC5 /* CorePlot in Frameworks */ = {isa = PBXBuildFile; productRef = 7F124B5325F2F8EA00D12DC5 /* CorePlot */; };
+		7F124B5E25FBC61000D12DC5 /* calculatePsi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B5D25FBC61000D12DC5 /* calculatePsi.swift */; };
+		7F124B5F25FBC61000D12DC5 /* calculatePsi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B5D25FBC61000D12DC5 /* calculatePsi.swift */; };
+		7F124B6025FBC61000D12DC5 /* calculatePsi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B5D25FBC61000D12DC5 /* calculatePsi.swift */; };
+		7F124B6125FBC61000D12DC5 /* calculatePsi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B5D25FBC61000D12DC5 /* calculatePsi.swift */; };
+		7F124B6725FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */; };
+		7F124B6825FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */; };
+		7F124B6925FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */; };
+		7F124B6A25FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +96,8 @@
 		7F124B0E25F2F7B200D12DC5 /* operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = operators.swift; sourceTree = "<group>"; };
 		7F124B0F25F2F7B200D12DC5 /* CalculatePlotData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePlotData.swift; sourceTree = "<group>"; };
 		7F124B1025F2F7B200D12DC5 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		7F124B5D25FBC61000D12DC5 /* calculatePsi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatePsi.swift; sourceTree = "<group>"; };
+		7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waveFuctionArrayClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +160,10 @@
 				7F124B0D25F2F7B200D12DC5 /* TextExportDocument.swift */,
 				7F124B0E25F2F7B200D12DC5 /* operators.swift */,
 				7F124B0F25F2F7B200D12DC5 /* CalculatePlotData.swift */,
+				7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */,
 				7F124B1025F2F7B200D12DC5 /* TextView.swift */,
 				7F124ACA25F2F79F00D12DC5 /* Assets.xcassets */,
+				7F124B5D25FBC61000D12DC5 /* calculatePsi.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -386,8 +398,10 @@
 				7F124B2725F2F7B200D12DC5 /* operators.swift in Sources */,
 				7F124B2325F2F7B200D12DC5 /* TextExportDocument.swift in Sources */,
 				7F124B1F25F2F7B200D12DC5 /* PlotDataClass.swift in Sources */,
+				7F124B5E25FBC61000D12DC5 /* calculatePsi.swift in Sources */,
 				7F124B1725F2F7B200D12DC5 /* CorePlot.swift in Sources */,
 				7F124AF125F2F79F00D12DC5 /* shootingMethodPlotApp.swift in Sources */,
+				7F124B6725FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */,
 				7F124B1325F2F7B200D12DC5 /* ChangingPlotParameters.swift in Sources */,
 				7F124B2F25F2F7B200D12DC5 /* TextView.swift in Sources */,
 			);
@@ -402,8 +416,10 @@
 				7F124B2825F2F7B200D12DC5 /* operators.swift in Sources */,
 				7F124B2425F2F7B200D12DC5 /* TextExportDocument.swift in Sources */,
 				7F124B2025F2F7B200D12DC5 /* PlotDataClass.swift in Sources */,
+				7F124B5F25FBC61000D12DC5 /* calculatePsi.swift in Sources */,
 				7F124B1825F2F7B200D12DC5 /* CorePlot.swift in Sources */,
 				7F124AF225F2F79F00D12DC5 /* shootingMethodPlotApp.swift in Sources */,
+				7F124B6825FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */,
 				7F124B1425F2F7B200D12DC5 /* ChangingPlotParameters.swift in Sources */,
 				7F124B3025F2F7B200D12DC5 /* TextView.swift in Sources */,
 			);
@@ -417,7 +433,9 @@
 				7F124B2D25F2F7B200D12DC5 /* CalculatePlotData.swift in Sources */,
 				7F124B2925F2F7B200D12DC5 /* operators.swift in Sources */,
 				7F124AE425F2F79F00D12DC5 /* Tests_iOS.swift in Sources */,
+				7F124B6025FBC61000D12DC5 /* calculatePsi.swift in Sources */,
 				7F124B2125F2F7B200D12DC5 /* PlotDataClass.swift in Sources */,
+				7F124B6925FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */,
 				7F124B2525F2F7B200D12DC5 /* TextExportDocument.swift in Sources */,
 				7F124B3125F2F7B200D12DC5 /* TextView.swift in Sources */,
 				7F124B1525F2F7B200D12DC5 /* ChangingPlotParameters.swift in Sources */,
@@ -432,7 +450,9 @@
 				7F124B2E25F2F7B200D12DC5 /* CalculatePlotData.swift in Sources */,
 				7F124B2A25F2F7B200D12DC5 /* operators.swift in Sources */,
 				7F124AEF25F2F79F00D12DC5 /* Tests_macOS.swift in Sources */,
+				7F124B6125FBC61000D12DC5 /* calculatePsi.swift in Sources */,
 				7F124B2225F2F7B200D12DC5 /* PlotDataClass.swift in Sources */,
+				7F124B6A25FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */,
 				7F124B2625F2F7B200D12DC5 /* TextExportDocument.swift in Sources */,
 				7F124B3225F2F7B200D12DC5 /* TextView.swift in Sources */,
 				7F124B1625F2F7B200D12DC5 /* ChangingPlotParameters.swift in Sources */,
