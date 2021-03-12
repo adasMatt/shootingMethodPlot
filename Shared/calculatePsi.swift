@@ -61,7 +61,6 @@ class recursionClass: infiniteSquareWell {
         
         for xValue in stride(from: xMin, through: xMax, by: xSteps) {
             
-            
             // need to append deltaX to set of x points for Core Plot
 
             // slope at each point
@@ -69,12 +68,11 @@ class recursionClass: infiniteSquareWell {
             
             // psi depending on initial psiPrime[0] guess
             
-            //why do I have 2 zeros
             psi.append(psi[i] + psiPrime[i]*deltaX)
-            print(psi[i])
+
             // recursiveness in psiDoublePrime dependent on psi
             psiDoublePrime.append(-(2/hbarSquaredOverElectronMass) * psi[i+1] * energy)
-            /*
+            /* plots psi
             let x = xValue
             let y = psi[i]
             // from coreplot stuff
@@ -83,7 +81,6 @@ class recursionClass: infiniteSquareWell {
             */
             // what is calculated text?
             //plotDataModel!.calculatedText += "\(x)\t\(y)\n"
-            
             
             i += 1
             

@@ -44,9 +44,6 @@ class CalculatePlotData: ObservableObject {
             let dataPoint: plotDataType = [.X: energy, .Y: functionalValue] // create single point?
             plotData.append(contentsOf: [dataPoint]) // append single point to an array?
             
-            
-            
-            
         }
         
         // what about for length waveFuncArrays.psiArray: plotData.append(deltaX, psi)
