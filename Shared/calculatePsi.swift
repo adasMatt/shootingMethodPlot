@@ -72,7 +72,8 @@ class recursionClass: infiniteSquareWell {
 
             // recursiveness in psiDoublePrime dependent on psi
             psiDoublePrime.append(-(2/hbarSquaredOverElectronMass) * psi[i+1] * energy)
-            /* plots psi
+           
+            /* ///////         plots psi       /////////
             let x = xValue
             let y = psi[i]
             // from coreplot stuff

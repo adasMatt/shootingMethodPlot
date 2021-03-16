@@ -14,10 +14,12 @@ struct ContentView: View {
     @EnvironmentObject var plotDataModel :PlotDataClass
     @ObservedObject private var calculator = CalculatePlotData()
     @State var isChecked:Bool = false
-    @State var tempInput = ""
-  
+    @State var energyMinInput = "0.0"
+    @State var energyMaxInput = "20.0"
+    @State var stepWidthInput = "0.005"
+    @State var selectionInput = ""
     
-
+    
     var body: some View {
         
         VStack{
@@ -33,18 +35,32 @@ struct ContentView: View {
             
             HStack{
                 
-                HStack(alignment: .center) {
-                    Text("temp:")
-                        .font(.callout)
-                        .bold()
-                    TextField("temp", text: $tempInput)
-                        .padding()
-                }.padding()
+                //HStack(alignment: .leading) {
+                VStack(alignment: .leading) {
+                    Text("Energy Min")
+                    TextField("Energy Min", text: $energyMinInput)
+                    Text("EnergyMax")
+                    TextField("Energy Max", text: $energyMaxInput)
+                    Text("Step Width")
+                    TextField("Step Width", text: $stepWidthInput)
+
+                }
                 
-                Toggle(isOn: $isChecked) {
-                            Text("Display Error")
-                        }
-                .padding()
+                VStack {
+                    Picker(selection: $selectionInput, label:
+                                    Text("Picker Name")
+                                    , content: {
+                                        Text("Functional").tag(0)
+                                        Text("Psi").tag(1)
+                                        
+                                })
+                }
+                //}.padding()
+                
+                //Toggle(isOn: $isChecked) {
+                //            Text("Display Error")
+                //        }
+                //.padding()
                 
                 
             }
@@ -68,12 +84,15 @@ struct ContentView: View {
     func calculate(){
         
         //var temp = 0.0
-        
+        let eMin = Double(energyMinInput)!
+        let eMax = Double(energyMaxInput)!
+        let eStep = Double(stepWidthInput)!
+        let selection = Int(selectionInput)!
         //pass the plotDataModel to the cosCalculator
         calculator.plotDataModel = self.plotDataModel
         
         //Calculate the new plotting data and place in the plotDataModel
-        calculator.shootingMethodPlot()
+        calculator.shootingMethodPlot(eMin: eMin, eMax: eMax, energyStep: eStep, selection: selection)
         
         
     }

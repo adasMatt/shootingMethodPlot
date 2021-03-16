@@ -15,13 +15,15 @@ class CalculatePlotData: ObservableObject {
     
     var plotDataModel: PlotDataClass? = nil
 
-    func shootingMethodPlot()
+    func shootingMethodPlot(eMin: Double, eMax: Double, energyStep: Double, selection: Int)
     {
+        // need to add if-else or switch statements for selection to choose between plotting functional or psi
+        
         
         //set the Plot Parameters
         plotDataModel!.changingPlotParameters.yMax = 10.0
         plotDataModel!.changingPlotParameters.yMin = -5.0
-        plotDataModel!.changingPlotParameters.xMax = 10.0
+        plotDataModel!.changingPlotParameters.xMax = 20.0
         plotDataModel!.changingPlotParameters.xMin = -5.0
         plotDataModel!.changingPlotParameters.xLabel = "x"
         plotDataModel!.changingPlotParameters.yLabel = "y"
@@ -31,9 +33,9 @@ class CalculatePlotData: ObservableObject {
         
         
         var plotData :[plotDataType] =  []
-        var eMin = 0.0
-        var eMax = 20.0
-        let energyStep = 0.0050
+        //var eMin = 0.0
+        //var eMax = 20.0
+        //let energyStep = 0.0050
          // what is calculated text?
         //  plotDataModel!.calculatedText += "\(x)\t\(y)\n"
 
