@@ -3,7 +3,7 @@
 //  rk4Plot
 //
 //  Created by Matthew Adas on 3/19/21.
-//
+// search "add potential"
 
 import Foundation
 import SwiftUI

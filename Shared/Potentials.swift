@@ -11,14 +11,20 @@ import CorePlot
 
 
 
-class potentials: ObservedObject {
+class potentialsClass: ObservedObject {
     
+    var oneDPotentialArray: [Double] = []
+    var oneDPotentialXArray: [Double] = []
+    var oneDPotentialYArray: [Double] = []
 
     func getPotential(potentialType: String, xMin: Double, xMax: Double, xStep: Double)
     {
-        potential.oneDPotentialArray.removeAll()
-        potential.oneDPotentialXArray.removeAll()
-        potential.oneDPotentialYArray.removeAll()
+        oneDPotentialArray.removeAll()
+        oneDPotentialXArray.removeAll()
+        oneDPotentialYArray.removeAll()
+        //potential.oneDPotentialArray.removeAll()
+        //potential.oneDPotentialXArray.removeAll()
+        //potential.oneDPotentialYArray.removeAll()
         
         xOffset = 0.0
         
@@ -28,16 +34,17 @@ class potentials: ObservedObject {
         switch potentialType {
         case "Square Well":
             
-            startPotential(xMin: xMin, xMax: xMax, xStep: xStep)
+            //startPotential(xMin: xMin, xMax: xMax, xStep: xStep)
             
             for i in stride(from: xMin+xStep, through: xMax-xStep, by: xStep) {
                 
-                potential.oneDPotentialXArray.append(i)
-                potential.oneDPotentialYArray.append(0.0)
+                oneDPotentialXArray.append(i)
+                oneDPotentialYArray.append(0.0)
                 
                 count = potential.oneDPotentialXArray.count
-                dataPoint = [.X: potential.oneDPotentialXArray[count-1], .Y: potential.oneDPotentialYArray[count-1]]
-                contentArray.append(dataPoint)
+                //dataPoint = [.X: potential.oneDPotentialXArray[count-1], .Y: potential.oneDPotentialYArray[count-1]]
+                dataPoint = [.X: oneDPotentialXArray[count-1], .Y: oneDPotentialYArray[count-1]]
+                append(dataPoint)
             }
             
             finishPotential(xMin: xMin, xMax: xMax, xStep: xStep)
