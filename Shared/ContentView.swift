@@ -50,8 +50,8 @@ struct ContentView: View {
                     Picker(selection: $selectionInput, label:
                                     Text("Picker Name")
                                     , content: {
-                                        Text("Functional").tag(0)
-                                        Text("Psi").tag(1)
+                                        Text("Infinite Sq Well").tag(0)
+                                        Text("Something Else").tag(1)
                                         
                                 })
                 }
@@ -92,8 +92,7 @@ struct ContentView: View {
         calculator.plotDataModel = self.plotDataModel
         
         //Calculate the new plotting data and place in the plotDataModel
-        calculator.shootingMethodPlot(eMin: eMin, eMax: eMax, energyStep: eStep, selection: selection)
-        
+        calculator.rk4Plot(eMin: eMin, eMax: eMax, energyStep: eStep, selection: selection) // add potential?
         
     }
     
