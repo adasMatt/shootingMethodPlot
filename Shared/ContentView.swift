@@ -17,7 +17,7 @@ struct ContentView: View {
     @State var energyMinInput = "0.0"
     @State var energyMaxInput = "20.0"
     @State var stepWidthInput = "0.005"
-    @State var selectionInput = ""
+    @State var selectionInput = "0"
     
     
     var body: some View {

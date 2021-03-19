@@ -17,6 +17,7 @@ class CalculatePlotData: ObservableObject {
 
     func shootingMethodPlot(eMin: Double, eMax: Double, energyStep: Double, selection: Int)
     {
+        // forget plotting functional or psi, plot functional for different potentials
         // need to add if-else or switch statements for selection to choose between plotting functional or psi
         
         
@@ -38,7 +39,8 @@ class CalculatePlotData: ObservableObject {
         //let energyStep = 0.0050
          // what is calculated text?
         //  plotDataModel!.calculatedText += "\(x)\t\(y)\n"
-
+        
+        // i think... if selection == 0 {
         for energy in stride(from: eMin, through: eMax, by: energyStep) {
             
             let functionalValue = recursion.shootingMethod(xSteps: 0.005, guessEnergy: energy)
@@ -47,6 +49,8 @@ class CalculatePlotData: ObservableObject {
             plotData.append(contentsOf: [dataPoint]) // append single point to an array?
             
         }
+        
+        //but else if selection == 1 {
         
         // what about for length waveFuncArrays.psiArray: plotData.append(deltaX, psi)
         // arguments here should be user input

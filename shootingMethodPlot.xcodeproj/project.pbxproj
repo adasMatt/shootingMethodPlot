@@ -55,6 +55,10 @@
 		7F124B6825FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */; };
 		7F124B6925FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */; };
 		7F124B6A25FBCF1E00D12DC5 /* waveFuctionArrayClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */; };
+		7F124B7D26050AA700D12DC5 /* recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B7C26050AA700D12DC5 /* recursion.swift */; };
+		7F124B7E26050AA700D12DC5 /* recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B7C26050AA700D12DC5 /* recursion.swift */; };
+		7F124B7F26050AA700D12DC5 /* recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B7C26050AA700D12DC5 /* recursion.swift */; };
+		7F124B8026050AA700D12DC5 /* recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F124B7C26050AA700D12DC5 /* recursion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +102,7 @@
 		7F124B1025F2F7B200D12DC5 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		7F124B5D25FBC61000D12DC5 /* calculatePsi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatePsi.swift; sourceTree = "<group>"; };
 		7F124B6625FBCF1E00D12DC5 /* waveFuctionArrayClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waveFuctionArrayClass.swift; sourceTree = "<group>"; };
+		7F124B7C26050AA700D12DC5 /* recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recursion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +169,7 @@
 				7F124B1025F2F7B200D12DC5 /* TextView.swift */,
 				7F124ACA25F2F79F00D12DC5 /* Assets.xcassets */,
 				7F124B5D25FBC61000D12DC5 /* calculatePsi.swift */,
+				7F124B7C26050AA700D12DC5 /* recursion.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -397,6 +403,7 @@
 				7F124B2B25F2F7B200D12DC5 /* CalculatePlotData.swift in Sources */,
 				7F124B2725F2F7B200D12DC5 /* operators.swift in Sources */,
 				7F124B2325F2F7B200D12DC5 /* TextExportDocument.swift in Sources */,
+				7F124B7D26050AA700D12DC5 /* recursion.swift in Sources */,
 				7F124B1F25F2F7B200D12DC5 /* PlotDataClass.swift in Sources */,
 				7F124B5E25FBC61000D12DC5 /* calculatePsi.swift in Sources */,
 				7F124B1725F2F7B200D12DC5 /* CorePlot.swift in Sources */,
@@ -415,6 +422,7 @@
 				7F124B2C25F2F7B200D12DC5 /* CalculatePlotData.swift in Sources */,
 				7F124B2825F2F7B200D12DC5 /* operators.swift in Sources */,
 				7F124B2425F2F7B200D12DC5 /* TextExportDocument.swift in Sources */,
+				7F124B7E26050AA700D12DC5 /* recursion.swift in Sources */,
 				7F124B2025F2F7B200D12DC5 /* PlotDataClass.swift in Sources */,
 				7F124B5F25FBC61000D12DC5 /* calculatePsi.swift in Sources */,
 				7F124B1825F2F7B200D12DC5 /* CorePlot.swift in Sources */,
@@ -431,6 +439,7 @@
 			files = (
 				7F124B1925F2F7B200D12DC5 /* CorePlot.swift in Sources */,
 				7F124B2D25F2F7B200D12DC5 /* CalculatePlotData.swift in Sources */,
+				7F124B7F26050AA700D12DC5 /* recursion.swift in Sources */,
 				7F124B2925F2F7B200D12DC5 /* operators.swift in Sources */,
 				7F124AE425F2F79F00D12DC5 /* Tests_iOS.swift in Sources */,
 				7F124B6025FBC61000D12DC5 /* calculatePsi.swift in Sources */,
@@ -448,6 +457,7 @@
 			files = (
 				7F124B1A25F2F7B200D12DC5 /* CorePlot.swift in Sources */,
 				7F124B2E25F2F7B200D12DC5 /* CalculatePlotData.swift in Sources */,
+				7F124B8026050AA700D12DC5 /* recursion.swift in Sources */,
 				7F124B2A25F2F7B200D12DC5 /* operators.swift in Sources */,
 				7F124AEF25F2F79F00D12DC5 /* Tests_macOS.swift in Sources */,
 				7F124B6125FBC61000D12DC5 /* calculatePsi.swift in Sources */,
